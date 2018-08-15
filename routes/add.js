@@ -36,9 +36,9 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  var rex = {
+  var rec = {
     title: req.body.title,
-    conent: req.body.content,
+    content: req.body.content,
     user_id: req.session.login.id
   }
   new Markdata(rec).save().then((model) => {
