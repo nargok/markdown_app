@@ -5,7 +5,8 @@ var knex = require('knex')({
   dialect: 'sqlite3',
   connection: {
     filename: 'mark_data.sqlite3'
-  }
+  },
+  useNullAsDefault: true
 });
 
 var Bookshelf = require('bookshelf')(knex);
