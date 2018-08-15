@@ -1,2 +1,3 @@
 node_modules/*
 mark_data.sqlite3
+.vscode/
